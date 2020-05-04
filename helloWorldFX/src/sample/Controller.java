@@ -13,11 +13,28 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import javafx.util.Duration;
 
 
+/**
+ * FXML Controller class
+ *
+ * @author nipun
+ */
+public class Controller<La> implements Initializable {
 
-public class Controller
-{
+    @FXML
+    private Pane visible;
 
+    public void Clicked(ActionEvent event){
+        System.out.println("button clicked");
+    }
+    /**
+     * Initializes the controller class.
+     */
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+
+    }
 }

@@ -7,7 +7,7 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="593.0" prefWidth="823.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="593.0" prefWidth="823.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Pane layoutX="259.0" layoutY="87.0" prefHeight="418.0" prefWidth="324.0" style="-fx-background-color: #ffffff67; -fx-background-radius: 80px;">
          <effect>
@@ -45,7 +45,7 @@
                   </ImageView>
                </children>
             </GridPane>
-            <Button layoutX="126.0" layoutY="273.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="94.0" style="-fx-background-color: #fe6dbc; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Log In" textFill="WHITE" />
+            <Button fx:id="change" layoutX="126.0" layoutY="273.0" mnemonicParsing="false" onAction="#Clicked" prefHeight="40.0" prefWidth="94.0" style="-fx-background-color: #fe6dbc; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Log In" textFill="WHITE" />
             <Label layoutX="67.0" layoutY="355.0" text="Forgot password?" />
             <Label layoutX="173.0" layoutY="355.0" text="Create  An Account" />
          </children>
