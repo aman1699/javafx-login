@@ -36,7 +36,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="32.0" prefWidth="97.0" style="-fx-background-color: #ff71ce; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Log In" />
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Clicked" prefHeight="32.0" prefWidth="97.0" style="-fx-background-color: #ff71ce; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Log In" />
                </children>
             </GridPane>
             <Label alignment="CENTER" contentDisplay="CENTER" layoutX="145.0" layoutY="69.0" prefHeight="39.0" prefWidth="313.0" text="Sign In" textFill="WHITE" AnchorPane.leftAnchor="145.0" AnchorPane.rightAnchor="95.0">
