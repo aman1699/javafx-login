@@ -12,11 +12,13 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
@@ -30,13 +32,14 @@ import javafx.util.Duration;
 public class Controller<La> implements Initializable {
 
     @FXML
+    private GridPane grid;
     private Pane visible;
     private Object Node;
 
     public void Clicked(ActionEvent event) throws IOException {
 
         System.out.println("button clicked");
-        Parent home_page_parent= FXMLLoader.load(getClass().getResource("HomePage.fxml"));
+        AnchorPane home_page_parent= FXMLLoader.load(getClass().getResource("HomePage.fxml"));
         Scene home_page_scene=new Scene(home_page_parent);
         Stage app_Stage=(Stage) ((Node) event.getSource()).getScene().getWindow();
         app_Stage.setScene(home_page_scene);
@@ -47,6 +50,8 @@ public class Controller<La> implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-
+        grid=new GridPane();
+        grid.setAlignment(Pos.CENTER);
+        
     }
 }

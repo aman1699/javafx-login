@@ -1,6 +1,10 @@
 #rootPane{
  -fx-background-image:url("download.jpg");
 }
-#change:hover{
- -fx-background-color:white;
+#btn:hover{
+ -fx-background-color:blue;
+}
+#grid{
+ width:20%;
+ margin:auto;
 }
