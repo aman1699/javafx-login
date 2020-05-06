@@ -1,50 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.effect.*?>
-<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
 <AnchorPane fx:id="rootPane" accessibleRole="TEXT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="593.0" prefWidth="823.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <AnchorPane layoutX="203.0" layoutY="59.0" prefHeight="474.0" prefWidth="418.0" style="-fx-border-radius: 120px; -fx-background-radius: 120px; -fx-background-color: #ffffff67;" AnchorPane.leftAnchor="203.0" AnchorPane.rightAnchor="202.0">
+      <AnchorPane layoutX="216.0" layoutY="79.0" prefHeight="474.0" prefWidth="451.0" style="-fx-border-radius: 120px; -fx-background-radius: 120px; -fx-background-color: #ffffff67;" AnchorPane.leftAnchor="156.0" AnchorPane.rightAnchor="156.0">
          <effect>
             <DropShadow />
          </effect>
          <children>
-            <Button id="btn" fx:id="change" accessibleRole="PARENT" alignment="CENTER" contentDisplay="CENTER" layoutX="148.0" layoutY="268.0" mnemonicParsing="false" onAction="#Clicked" prefHeight="40.0" prefWidth="138.0" style="-fx-background-color: #fe6dbc; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Log In" textFill="WHITE" AnchorPane.leftAnchor="148.0" AnchorPane.rightAnchor="132.0" />
-            <Label alignment="CENTER" layoutX="128.0" layoutY="40.0" prefHeight="38.0" prefWidth="190.0" text="Sign In" textFill="WHITE" AnchorPane.leftAnchor="128.0" AnchorPane.rightAnchor="113.0">
-               <font>
-                  <Font size="26.0" />
-               </font>
-            </Label>
-            <GridPane fx:id="grid" alignment="CENTER" layoutX="71.0" layoutY="115.0" prefHeight="130.0" prefWidth="279.0" AnchorPane.leftAnchor="71.0" AnchorPane.rightAnchor="56.0">
+            <GridPane fx:id="grid" alignment="CENTER" layoutX="117.0" layoutY="115.0" prefHeight="140.0" prefWidth="290.0" AnchorPane.leftAnchor="117.0" AnchorPane.rightAnchor="104.0">
               <columnConstraints>
-                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="131.20000000000002" minWidth="0.0" prefWidth="40.0" />
-                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="269.6" minWidth="10.0" prefWidth="238.39999999999995" />
+                <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="269.6" minWidth="10.0" prefWidth="254.2" />
               </columnConstraints>
               <rowConstraints>
                 <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
                 <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <TextField alignment="CENTER" prefHeight="46.0" prefWidth="208.0" promptText="Username" style="-fx-border-radius: 50px; -fx-border-color: #fff; -fx-background-radius: 50px;" GridPane.columnIndex="1" />
-                  <PasswordField alignment="CENTER" prefHeight="40.0" prefWidth="174.0" promptText="Password" style="-fx-border-radius: 50px; -fx-border-color: #fff; -fx-background-radius: 50px;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <ImageView fitHeight="34.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
-                     <image>
-                        <Image url="@lock.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="40.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@person.png" />
-                     </image>
-                  </ImageView>
+                  <TextField alignment="CENTER" prefHeight="54.0" prefWidth="261.0" promptText="Username" style="-fx-border-radius: 50px; -fx-border-color: #fff; -fx-background-radius: 50px;" />
+                  <PasswordField alignment="CENTER" prefHeight="54.0" prefWidth="245.0" promptText="Password" style="-fx-border-radius: 50px; -fx-border-color: #fff; -fx-background-radius: 50px;" GridPane.rowIndex="1" />
                </children>
             </GridPane>
-            <Label fx:id="Create" alignment="CENTER" layoutX="259.0" layoutY="372.0" text="Create  An Account"  AnchorPane.leftAnchor="259.0" AnchorPane.rightAnchor="56.599999999999994" />
-            <Label fx:id="Forgot" accessibleRole="PARENT" alignment="CENTER" layoutX="100.0" layoutY="372.0"  text="Forgot password?" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="186.0" />
+            <Label fx:id="Create" alignment="CENTER" layoutX="259.0" layoutY="372.0" text="Create  An Account" AnchorPane.leftAnchor="259.0" AnchorPane.rightAnchor="62.599999999999994" />
+            <Label fx:id="Forgot" accessibleRole="PARENT" alignment="CENTER" layoutX="56.0" layoutY="372.0" text="Forgot password?" AnchorPane.leftAnchor="56.0" AnchorPane.rightAnchor="230.0" />
+            <GridPane layoutX="161.0" layoutY="277.0" prefHeight="39.0" prefWidth="205.0" AnchorPane.leftAnchor="161.0" AnchorPane.rightAnchor="145.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="32.0" prefWidth="97.0" style="-fx-background-color: #ff71ce; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Log In" />
+               </children>
+            </GridPane>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="145.0" layoutY="69.0" prefHeight="39.0" prefWidth="313.0" text="Sign In" textFill="WHITE" AnchorPane.leftAnchor="145.0" AnchorPane.rightAnchor="95.0">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <padding>
+                  <Insets right="30.0" />
+               </padding>
+            </Label>
          </children>
       </AnchorPane>
    </children>
