@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="486.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Control1">
+   <children>
+      <AnchorPane layoutX="147.0" layoutY="31.0" prefHeight="339.0" prefWidth="301.0" style="-fx-background-color: #ffffff67; -fx-background-radius: 50px; -fx-border-radius: 50px;">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.8763157725334167" green="0.8454824686050415" blue="0.8454824686050415" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <TextField layoutX="61.0" layoutY="136.0" prefHeight="26.0" prefWidth="179.0" promptText="email" />
+            <Label layoutX="109.0" layoutY="39.0" text="Sign in">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <PasswordField layoutX="61.0" layoutY="181.0" prefHeight="26.0" prefWidth="179.0" promptText="password" />
+            <TextField layoutX="61.0" layoutY="90.0" prefHeight="26.0" prefWidth="179.0" promptText="username" />
+            <Button layoutX="118.0" layoutY="239.0" mnemonicParsing="false" onAction="#anotherClicked" style="-fx-background-color: pink;" text="Sign in" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

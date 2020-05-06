@@ -24,6 +24,10 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 
 
+
+
+
+
 /**
  * FXML Controller class
  *
@@ -35,6 +39,12 @@ public class Controller<La> implements Initializable {
     private GridPane grid;
     private Pane visible;
     private Object Node;
+    @FXML
+    private Label Forgot;
+    @FXML
+    private Label Create;
+    private java.lang.Object Object;
+
 
     public void Clicked(ActionEvent event) throws IOException {
 
@@ -45,13 +55,45 @@ public class Controller<La> implements Initializable {
         app_Stage.setScene(home_page_scene);
         app_Stage.show();
     }
-    /**
-     * Initializes the controller class.
-     */
+
     @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        grid=new GridPane();
-        grid.setAlignment(Pos.CENTER);
-        
+    public void initialize(URL url, ResourceBundle rb)  {
+        Object forgot;
+        Forgot.setOnMouseClicked(mouseEvent -> {
+            System.out.println("button Clicked");
+
+            try {
+                AnchorPane home= FXMLLoader.load(getClass().getResource("forgot.fxml"));
+                Scene home_page=new Scene(home);
+
+                Stage app1_Stage=(Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
+                app1_Stage.setScene(home_page);
+                app1_Stage.show();
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+        });
+        Object create;
+        Create.setOnMouseClicked(mouseEvent -> {
+            System.out.println("button Clicked");
+
+            try {
+                AnchorPane home1= FXMLLoader.load(getClass().getResource("create.fxml"));
+                Scene home_page1=new Scene(home1);
+
+                Stage app2_Stage=(Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
+                app2_Stage.setScene(home_page1);
+                app2_Stage.show();
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+        });
+
+
+
     }
 }
