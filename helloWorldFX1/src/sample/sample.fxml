@@ -22,8 +22,8 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <TextField alignment="CENTER" prefHeight="54.0" prefWidth="261.0" promptText="Username" style="-fx-border-radius: 50px; -fx-border-color: #fff; -fx-background-radius: 50px;" />
-                  <PasswordField alignment="CENTER" prefHeight="54.0" prefWidth="245.0" promptText="Password" style="-fx-border-radius: 50px; -fx-border-color: #fff; -fx-background-radius: 50px;" GridPane.rowIndex="1" />
+                  <TextField fx:id="loginUser" alignment="CENTER" prefHeight="54.0" prefWidth="261.0" promptText="Username" style="-fx-border-radius: 50px; -fx-border-color: #fff; -fx-background-radius: 50px;" />
+                  <PasswordField fx:id="loginPassword" alignment="CENTER" prefHeight="54.0" prefWidth="245.0" promptText="Password" style="-fx-border-radius: 50px; -fx-border-color: #fff; -fx-background-radius: 50px;" GridPane.rowIndex="1" />
                </children>
             </GridPane>
             <Label fx:id="Create" alignment="CENTER" layoutX="259.0" layoutY="372.0" text="Create  An Account" AnchorPane.leftAnchor="259.0" AnchorPane.rightAnchor="62.599999999999994" />

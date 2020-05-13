@@ -17,14 +17,13 @@
             </DropShadow>
          </effect>
          <children>
-            <TextField layoutX="61.0" layoutY="136.0" prefHeight="26.0" prefWidth="179.0" promptText="email" />
             <Label layoutX="109.0" layoutY="39.0" text="Sign in">
                <font>
                   <Font size="23.0" />
                </font>
             </Label>
-            <PasswordField layoutX="61.0" layoutY="181.0" prefHeight="26.0" prefWidth="179.0" promptText="password" />
-            <TextField layoutX="61.0" layoutY="90.0" prefHeight="26.0" prefWidth="179.0" promptText="username" />
+            <PasswordField fx:id="passw" layoutX="61.0" layoutY="181.0" prefHeight="26.0" prefWidth="179.0" promptText="password" />
+            <TextField fx:id="newUser" layoutX="61.0" layoutY="90.0" prefHeight="26.0" prefWidth="179.0" promptText="username" />
             <Button layoutX="118.0" layoutY="239.0" mnemonicParsing="false" onAction="#anotherClicked" style="-fx-background-color: pink;" text="Sign in" />
          </children>
       </AnchorPane>
